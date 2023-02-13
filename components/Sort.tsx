@@ -6,7 +6,7 @@ export function Sort() {
   
         <TextBg>
           <Text>
-            <p>並び替え</p>
+            <p>↑↓ 並び替え</p>
           </Text>
         </TextBg>
         

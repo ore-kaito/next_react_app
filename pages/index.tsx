@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import {Menu} from 'components/Menu'
 import {Sort} from "components/Sort"
-import {Contents} from 'components/Contents'
-
-
+import YoutubeContents from "components/Contents/Youtube/YoutubeContents"
 
 
 export default function Home() {
@@ -17,7 +15,8 @@ export default function Home() {
         
       <Menu />
       <Sort />
-      <Contents />
+      <YoutubeContents />
+      
     </>
   );
 }

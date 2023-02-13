@@ -6,4 +6,10 @@ const nextConfig = {
   },
 }
 
+module.exports = {
+  // ...
+  baseUrl: ".",
+  trailingSlash: true,
+}
+
 module.exports = nextConfig
