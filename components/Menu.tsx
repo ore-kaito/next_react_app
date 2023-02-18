@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Link from "next/link"
+
 
 export function Menu() {
     return (
@@ -7,10 +9,10 @@ export function Menu() {
             <Link href="/">
               Youtube
             </Link>
-            <Link href="/">
+            <Link href="/TwitterPage/TwitterContents">
               Twitter
             </Link>
-            <Link href="/">
+            <Link href="/InstaPage/InstaContents">
               Instagram
             </Link>
           </Header>
@@ -34,8 +36,6 @@ export function Menu() {
  
   `;
   
-  const Link = styled.a`
-    color: #c4f5f7;
-  `;
+
   
   export default Menu;
