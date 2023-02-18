@@ -3,8 +3,9 @@ import {NextPage} from 'next'
 import Image from 'next/image'
 
 
-export function Contents() {
+export function TwitterContents() {
     return (
+        // flex-wrapができない
 
         <ContentBg>
             <ContentBoxes>
@@ -67,7 +68,7 @@ export function Contents() {
 }
 
 export const ImageBox: React.FC = () => (
-    <Image src="/" width={364} height={264}  alt="" />
+    <Image src="/img1" width={364} height={264}  alt="" />
 )
 
 // Contentsの背景
@@ -78,12 +79,11 @@ const ContentBg = styled.div`
 // 動画３を1つの単位にした
 const ContentBoxes = styled.div`
     display:flex;
-    margin: 0 auto;
-    width: 1130px;
 `
 
 const ContentBox = styled.div`
-    margin: 0 10px 10px 0;
+    width: 1040px;
+    margin: 0 auto;
     display: flex;
     
 `
@@ -99,4 +99,4 @@ const Link = styled.a`
 
   `;
 
-export default Contents;
+  export default TwitterContents

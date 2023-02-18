@@ -1,11 +1,8 @@
 import styled from 'styled-components'
-import {NextPage} from 'next'
 import Image from 'next/image'
 
-
-export function Contents() {
+export function YoutubeContents() {
     return (
-        // flex-wrapができない
 
         <ContentBg>
             <ContentBoxes>
@@ -13,7 +10,7 @@ export function Contents() {
                     <ParagraghCenter>
                         <p>1</p>
                     </ParagraghCenter>
-                    <Link href="/">
+                    <Link href="">
                     <ImageBox/>
                     </Link>
                     
@@ -67,8 +64,11 @@ export function Contents() {
     )
 }
 
+
+
+
 export const ImageBox: React.FC = () => (
-    <Image src="" width={364} height={264}  alt="" />
+    <Image src="/" width={364} height={264}  alt="" />
 )
 
 // Contentsの背景
@@ -79,11 +79,12 @@ const ContentBg = styled.div`
 // 動画３を1つの単位にした
 const ContentBoxes = styled.div`
     display:flex;
+    margin: 0 auto;
+    width: 1130px;
 `
 
 const ContentBox = styled.div`
-    width: 1040px;
-    margin: 0 auto;
+    margin: 0 10px 10px 0;
     display: flex;
     
 `
@@ -99,4 +100,4 @@ const Link = styled.a`
 
   `;
 
-export default Contents;
+export default YoutubeContents;
