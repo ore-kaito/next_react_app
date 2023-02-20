@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 
-export function YoutubeContents() {
+export function ContentsPage() {
     return (
 
         <ContentBg>
@@ -100,4 +100,4 @@ const Link = styled.a`
 
   `;
 
-export default YoutubeContents;
+export default ContentsPage;

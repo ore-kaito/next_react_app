@@ -1,69 +1,11 @@
 import styled from 'styled-components'
 import {NextPage} from 'next'
 import Image from 'next/image'
-
+import Home from "../index"
 
 export function TwitterContents() {
     return (
-        // flex-wrapができない
-
-        <ContentBg>
-            <ContentBoxes>
-                <ContentBox>
-                    <ParagraghCenter>
-                        <p>1</p>
-                    </ParagraghCenter>
-                    <Link href="/">
-                    <ImageBox/>
-                    </Link>
-                    
-                </ContentBox>
-                <ContentBox>
-                    <ParagraghCenter>
-                        <p>2</p>
-                    </ParagraghCenter>
-                    <Link href="/">
-                    <ImageBox/>
-                    </Link>
-                </ContentBox>
-                <ContentBox>
-                    <ParagraghCenter>
-                        <p>3</p>
-                    </ParagraghCenter>
-                    <Link href="/">
-                    <ImageBox/>
-                    </Link>
-                </ContentBox>
-            </ContentBoxes>
-            
-            <ContentBoxes>
-            <ContentBox>
-                <ParagraghCenter>
-                    <p>4</p>
-                </ParagraghCenter>
-                    <Link href="/">
-                    <ImageBox/>
-                    </Link>
-                    
-                </ContentBox>
-                <ContentBox>
-                    <ParagraghCenter>
-                        <p>5</p>
-                    </ParagraghCenter>
-                    <Link href="/">
-                    <ImageBox/>
-                    </Link>
-                </ContentBox>
-                <ContentBox>
-                    <ParagraghCenter>
-                        <p>6</p>
-                    </ParagraghCenter>
-                    <Link href="/">
-                    <ImageBox/>
-                    </Link>
-                </ContentBox>
-            </ContentBoxes>
-        </ContentBg>
+        <Home />
     )
 }
 
