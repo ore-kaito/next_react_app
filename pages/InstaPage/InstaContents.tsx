@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 import {NextPage} from 'next'
 import Image from 'next/image'
-import Home from "../index"
+import Sort from "components/Sort"
+import { MenuTabContents } from "components/Menu_wrap/MenuTabContents"
 
 export function Contents() {
     return (
-        <Home />
+        <>
+        <Sort />
+        <MenuTabContents />
+        </>  
     )
 }
 
@@ -34,11 +38,5 @@ const ParagraghCenter = styled.div `
     justify-content: center;
     align-items: center;
 `
-
-
-// エラー出ないように定義だけしてる
-const Link = styled.a`
-
-  `;
 
 export default Contents;

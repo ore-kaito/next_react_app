@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 
-export function ContentsPage() {
+export function InstagramPage() {
     return (
-
         <ContentBg>
             <ContentBoxes>
                 <ContentBox>
                     <ParagraghCenter>
-                        <p>1</p>
+                        <p>insta</p>
                     </ParagraghCenter>
                     <Link href="">
                     <ImageBox/>
@@ -100,4 +99,4 @@ const Link = styled.a`
 
   `;
 
-export default ContentsPage;
+export default InstagramPage;

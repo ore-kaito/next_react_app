@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 import {NextPage} from 'next'
 import Image from 'next/image'
-import Home from "../index"
+import Sort from "components/Sort"
+import  { MenuTabContents } from "components/Menu_wrap/MenuTabContents"
 
 export function TwitterContents() {
     return (
-        <Home />
+        <>
+        <Sort />
+        <MenuTabContents />
+        </>   
     )
 }
 

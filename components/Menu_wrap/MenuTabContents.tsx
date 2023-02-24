@@ -1,12 +1,12 @@
+import { TwitterPage } from 'components/TwitterPage';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import ContentsPage from 'pages/YoutubePage/ContentsPage';
-
-import TwitterContents from 'pages/TwitterPage/TwitterContents';
-import InstaContents from "pages/InstaPage/InstaContents";
+import YoutubePage from '../YoutubePage'
+import Instagram from '../InstagramPage'
 
 export function MenuTabContents() {
-    return(
+  console.log()
+    return (
       
       <Tabs >
         <TabList> 
@@ -16,17 +16,18 @@ export function MenuTabContents() {
         </TabList>
         {/* Youtube */}
         <TabPanel>
-          <ContentsPage/>
+         <YoutubePage/>
         </TabPanel>
 
         {/* Twitter クリック時にレンダリングされないようにしたい*/}
+        {/* <Link aref=""></Link> */}
         <TabPanel>
-          <TwitterContents/>
+          <TwitterPage />
         </TabPanel>
 
         {/* Instagram クリック時にレンダリングされないようにしたい*/}
         <TabPanel>
-          <InstaContents/>
+          <Instagram />
         </TabPanel>
       </Tabs>
     )
