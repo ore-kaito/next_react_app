@@ -7,6 +7,21 @@
   min-height: 100vh;
 }
 
+.search_box {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.para {
+  margin: 10px 30px;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #c4f5f7;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -73,6 +88,19 @@
   max-width: 30ch;
 }
 
+.position_center {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+
+.margin_top {
+  
+  margin-top: 30px;
+}
+
+
+
 .center {
   display: flex;
   justify-content: center;
@@ -80,6 +108,7 @@
   position: relative;
   padding: 4rem 0;
 }
+
 
 .center::before {
   background: var(--secondary-glow);

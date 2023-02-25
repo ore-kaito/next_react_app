@@ -3,32 +3,39 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import YoutubePage from '../YoutubePage'
 import Instagram from '../InstagramPage'
+import styles from '../../styles/Home.module.css'
 
 export function MenuTabContents() {
   console.log()
+  
     return (
       
-      <Tabs >
-        <TabList> 
-          <Tab>Youtube</Tab>
-          <Tab>Twitter</Tab>
-          <Tab>Instagram</Tab>
-        </TabList>
-        {/* Youtube */}
+      <Tabs>
+        <div className={styles.margin_top}></div>
+          <TabList> 
+          <div className={styles.position_center}>
+             <Tab>Youtube</Tab>
+            
+            
+            <Tab>Twitter</Tab>
+            <Tab>Instagram</Tab>
+          </div>
+          </TabList>
+     
+        
+
         <TabPanel>
          <YoutubePage/>
         </TabPanel>
 
-        {/* Twitter クリック時にレンダリングされないようにしたい*/}
-        {/* <Link aref=""></Link> */}
         <TabPanel>
           <TwitterPage />
         </TabPanel>
 
-        {/* Instagram クリック時にレンダリングされないようにしたい*/}
         <TabPanel>
           <Instagram />
         </TabPanel>
+        
       </Tabs>
     )
   }
